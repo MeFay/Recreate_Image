@@ -1,0 +1,78 @@
+:root {
+  --bg-color: white;
+  --red-color: #e03130;
+  --blue-color: #1a70c2;
+  --black-color: #1f1f1f;
+  --orange-color: #f38b04;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Indie Flower", cursive;
+  font-size: 24px;
+  background-color: var(--bg-color);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  grid-template-columns: 0.7fr 0.3fr 1fr 1fr;
+  grid-template-areas:
+    "logo header header header"
+    "aside aside main asideTwo";
+}
+
+logo,
+header,
+.aside1,
+main,
+.aside2 {
+  color: inherit;
+  border: 5px solid;
+  border-radius: 15px;
+}
+
+logo {
+  grid-area: logo;
+  justify-content: center;
+  align-items: center;
+  color: var(--red-color);
+  border: 5px solid var(--red-color);
+  border-radius: 15px;
+}
+
+header {
+  grid-area: header;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue-color);
+  border: 5px solid var(--blue-color);
+  border-radius: 15px;
+}
+
+.aside1 {
+  grid-area: aside;
+  justify-content: center;
+  align-items: center;
+  color: var(--black-color);
+  border: 5px solid var(--black-color);
+  border-radius: 15px;
+}
+
+main {
+  grid-area: main;
+  justify-content: center;
+  align-items: center;
+  color: var(--orange-color);
+  border: 5px solid var(--orange-color);
+  border-radius: 15px;
+}
+
+.aside2 {
+  grid-area: asideTwo;
+  color: var(--red-color);
+  border: 5px solid var(--red-color);
+  border-radius: 15px;
+}
